@@ -130,41 +130,6 @@ class TorchVisionModel(PretrainedModel):
     def forward(self, x):
         return self.model(x)
 
-class EfficientNetB0(EfficientNetModel):
-    def __init__(self, model_args=None):
-        super().__init__('efficientnet-b0', model_args)
-
-
-class EfficientNetB1(EfficientNetModel):
-    def __init__(self, model_args=None):
-        super().__init__('efficientnet-b1', model_args)
-
-
-class EfficientNetB2(EfficientNetModel):
-    def __init__(self, model_args=None):
-        super().__init__('efficientnet-b2', model_args)
-
-
-class EfficientNetB3(EfficientNetModel):
-    def __init__(self, model_args=None):
-        super().__init__('efficientnet-b3', model_args)
-
-
-class EfficientNetB4(EfficientNetModel):
-    def __init__(self, model_args=None):
-        super().__init__('efficientnet-b4', model_args)
-
-
-class EfficientNetB5(EfficientNetModel):
-    def __init__(self, model_args=None):
-        super().__init__('efficientnet-b5', model_args)
-
-
-class EfficientNetB6(EfficientNetModel):
-    def __init__(self, model_args=None):
-        super().__init__('efficientnet-b6', model_args)
-
-
 class EfficientNetB7(EfficientNetModel):
     def __init__(self, model_args=None):
         super().__init__('efficientnet-b7', model_args)
@@ -175,76 +140,16 @@ class DenseNet121(TorchVisionModel):
         super(DenseNet121, self).__init__(models.densenet121, model_args)
 
 
-class DenseNet161(TorchVisionModel):
-    def __init__(self, model_args=None):
-        super(DenseNet161, self).__init__(models.densenet161, model_args)
-
-
-class DenseNet201(TorchVisionModel):
-    def __init__(self, model_args=None):
-        super(DenseNet201, self).__init__(models.densenet201, model_args)
-
-
-class ResNet18(TorchVisionModel):
-    def __init__(self, model_args=None):
-        super(ResNet18, self).__init__(models.resnet18, model_args)
-
-
-class ResNet34(TorchVisionModel):
-    def __init__(self, model_args=None):
-        super(ResNet34, self).__init__(models.resnet34, model_args)
-
-
-class ResNet50(TorchVisionModel):
-    def __init__(self, model_args=None):
-        super(ResNet50, self).__init__(models.resnet50, model_args)
-
-
 class ResNet101(TorchVisionModel):
     def __init__(self, model_args=None):
         super(ResNet101, self).__init__(models.resnet101, model_args)
-
-
-class ResNet152(TorchVisionModel):
-    def __init__(self, model_args=None):
-        super(ResNet152, self).__init__(models.resnet152, model_args)
-
-# class Inceptionv3(TorchVisionModel):
-#     def __init__(self, model_args=None):
-#         super(Inceptionv3, self).__init__(models.inception_v3, model_args)
+    
 
 class VGG16(TorchVisionModel):
     def __init__(self, model_args=None):
         super(VGG16, self).__init__(models.vgg16, model_args)
 
+
 class Inceptionv3(CadeneModel):
     def __init__(self, model_args=None):
         super(Inceptionv3, self).__init__('inceptionv3', model_args)
-
-class Inceptionv4(CadeneModel):
-    def __init__(self, model_args=None):
-        super(Inceptionv4, self).__init__('inceptionv4', model_args)
-
-class ResNeXt101(CadeneModel):
-    def __init__(self, model_args=None):
-        super(ResNeXt101, self).__init__('resnext101_64x4d', model_args)
-
-class NASNetA(CadeneModel):
-    def __init__(self, model_args=None):
-        super(NASNetA, self).__init__('nasnetalarge', model_args)
-
-
-class MNASNet(CadeneModel):
-    def __init__(self, model_args=None):
-        super(MNASNet, self).__init__('nasnetamobile', model_args)
-
-
-class SENet154(CadeneModel):
-    def __init__(self, model_args=None):
-        super(SENet154, self).__init__('senet154', model_args)
-
-
-class SEResNeXt101(CadeneModel):
-    def __init__(self, model_args=None):
-        super(SEResNeXt101, self).__init__('se_resnext101_32x4d', model_args)        
-        

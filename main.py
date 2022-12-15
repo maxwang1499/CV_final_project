@@ -13,7 +13,7 @@ from lightning import (get_task,
 
 def train(dataset_folder='./',
           save_dir="./sandbox",
-          exp_name="MultitaskBaseline-ResNet101-large",
+          exp_name="MultitaskBaseline-ResNet101",
           model="ResNet101",
           products="naip-rgb",
           image_size=720,
