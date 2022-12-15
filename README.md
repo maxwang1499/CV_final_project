@@ -8,4 +8,4 @@ To train the model, run:
 
 To evaluate the model on the test set, run:
 
-```python main.py test --ckpt_path <checkpoint path>
+```python main.py test --ckpt_path <checkpoint path>```
